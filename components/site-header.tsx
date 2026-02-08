@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Video } from "lucide-react";
+import { ModeToggle } from "@/components/mode-toggle";
 
 export function SiteHeader() {
     return (
@@ -25,6 +26,7 @@ export function SiteHeader() {
                     <Link className="text-sm font-medium hover:underline underline-offset-4 hidden sm:block" href="/login">
                         Login
                     </Link>
+                    <ModeToggle />
                     <Button>Get Started</Button>
                 </div>
             </div>
